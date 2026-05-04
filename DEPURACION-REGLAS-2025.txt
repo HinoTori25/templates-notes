@@ -1,0 +1,16 @@
+Para comenzar, habilitamos el modo scripting con el comando:
+configure
+set cli scripting-mode on # al iniciar, pegar el script, commmit
+set cli scripting-mode off # al terminar
+
+POLITICAS
+===============================================
+delete device-group DEVICEGROUP-APLICAR pre-rulebase security rules Acceso_Vimeo
+delete device-group DEVICEGROUP-APLICAR pre-rulebase security rules "10.2.40.123 Cloud"
+
+SERVICIOS
+===============================================
+delete device-group DEVICEGROUP-APLICART service MS-SQL
+delete device-group DEVICEGROUP-APLICAR service "SQL Net V1"
+delete device-group DEVICEGROUP-APLICAR service H.323
+delete device-group DEVICEGROUP-APLICAR service NetMeeting
