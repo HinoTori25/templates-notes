@@ -16,7 +16,7 @@ def getInfoIP(ip):
     # _apiURL = 'https://api.db-ip.com/v2/free/'+ip
     # API 2
     # para obtener un token, crear su cuenta en https://ipinfo.io/
-    token = '0c258e44462732'
+    token = 'coloca-aqui-tu-API-Token'
     _apiURL = 'https://ipinfo.io/' + ip + '/json?token=' + token
 
     r = requests.get(_apiURL)
